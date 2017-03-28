@@ -1,0 +1,43 @@
+{
+  "name": "notebook",
+  "version": "1.0.0",
+  "description": "A wiki of our own",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test",
+    "postinstall": "npm link typescript && typings install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://"
+  },
+  "keywords": [
+    "wiki",
+    "notebook"
+  ],
+  "author": "Pramati Technologies",
+  "license": "MIT",
+  "dependencies": {
+    "history": "^4.6.1",
+    "immutable": "^3.8.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-router": "^4.0.0"
+  },
+  "devDependencies": {
+    "config": "^1.25.1",
+    "grunt": "^1.0.1",
+    "grunt-connect-rewrite": "^0.2.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-webpack": "^2.0.1",
+    "source-map-loader": "^0.2.0",
+    "ts-loader": "^2.0.3",
+    "webpack": "^2.3.2",
+    "webpack-dev-server": "^2.4.2"
+  }
+}
