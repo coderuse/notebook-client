@@ -23,11 +23,11 @@
     "react-router-dom": "^4.0.0"
   },
   "devDependencies": {
-    "config": "^1.25.1",
-    "grunt": "^1.0.1",
     "@types/react": "^15.0.20",
     "@types/react-dom": "^0.14.23",
     "@types/react-router-dom": "^4.0.2",
+    "config": "^1.25.1",
+    "grunt": "^1.0.1",
     "grunt-connect-rewrite": "^0.2.1",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-concat": "^1.0.1",
@@ -37,8 +37,20 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-webpack": "^2.0.1",
     "source-map-loader": "^0.2.0",
+    "ts-jest": "^19.0.6",
     "ts-loader": "^2.0.3",
     "webpack": "^2.3.2",
     "webpack-dev-server": "^2.4.2"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "./node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
   }
 }
